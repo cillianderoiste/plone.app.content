@@ -93,6 +93,7 @@ class DeleteConfirmationForm(form.Form, LockingBase):
             target = self.context.absolute_url()
         else:
             target = self.view_url()
+            IStatusMessage(self.request).add(_(u'Removal cancelled.'))
         return self.request.response.redirect(target)
 
 
