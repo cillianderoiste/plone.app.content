@@ -4,6 +4,9 @@ Changelog
 3.0.8 (unreleased)
 ------------------
 
+- Require cmf.ModifyPortalContent for content_status_history
+  [vangheem]
+
 - Do not clear clipboard when pasting content
   [vangheem]
 
